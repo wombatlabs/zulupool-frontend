@@ -1,0 +1,18 @@
+<nz-card nzTitle="Pool Statistics" *ngIf="!loading" class="mb-4">
+    <nz-table [nzData]="[stats]" [nzBordered]="true" [nzPagination]="false">
+      <thead>
+        <tr>
+          <th>Metric</th>
+          <th>Value</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr *ngFor="let key of stats | keyvalue">
+          <td>{{ key.key }}</td>
+          <td>{{ key.value | number: '1.0-4' }}</td>
+        </tr>
+      </tbody>
+    </nz-table>
+  </nz-card>
+  <nz-spin *ngIf="loading"></nz-spin>
+  

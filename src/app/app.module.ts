@@ -105,6 +105,7 @@ import { TargetLoginBadgeComponent } from 'components/target-login-badge/target-
 import { ChartComponent } from 'components/chart/chart.component';
 import { ChartPowerComponent } from 'components/chart-power/chart-power.component';
 import { HeaderControlsComponent } from 'components/header-controls/header-controls.component';
+import { PoolStatsComponent } from 'components/pool-stats/pool-stats.component';
 
 import { AgoPipe } from 'pipes/ago.pipe';
 import { MetricPrefixifyPipe } from 'pipes/metric-prefixify.pipe';
@@ -253,6 +254,7 @@ export function HttpLoaderFactory(http: HttpClient) {
         ChartComponent,
         ChartPowerComponent,
         HeaderControlsComponent,
+        PoolStatsComponent,
 
         AgoPipe,
         MetricPrefixifyPipe,

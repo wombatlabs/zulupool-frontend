@@ -67,6 +67,8 @@ nzDescription="This is the Digibyte v8.22.0-RC2 testnet! For sha256 and scrypt t
     <app-chart class="coin-chart" [mainCoinForChart]="mainChartCoin"></app-chart>
 </div>
 
+<app-pool-stats></app-pool-stats>
+
 <div *ngIf="!haveBlocksData">
     <thead style="text-align: center;">
         <span style="padding: 2px; text-align: center; font-size: 22px; font-weight: bold;">
