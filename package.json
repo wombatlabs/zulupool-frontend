@@ -7,6 +7,7 @@
         "dev": "ng build --prod --build-optimizer --configuration=production,themes --base-href https://dev-gui.zulupool.com",
         "dgb": "ng build --prod --build-optimizer --configuration=production,themes --base-href https://dgb-t.zulupool.com",
         "start": "ng serve --port=4201 --configuration=production,themes",
+        "start-dev": "ng serve --proxy-config proxy-dev.conf.json --port=4201 --configuration=production,themes",
         "test": "ng test"
     },
     "private": true,
