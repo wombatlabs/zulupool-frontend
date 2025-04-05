@@ -21,9 +21,9 @@ export class UserApiService {
         return this.restService.post('/userResendEmail', params);
     }
 
-    //userChangePassword(params: IApi.IUserChangePassword): Observable<IApi.IUserActionResponse | null> {
-        //return this.restService.post('/userChangePassword', params);
-    //}
+    userChangePassword(params: IApi.IUserChangePassword): Observable<IApi.IUserActionResponse | null> {
+        return this.restService.post('/userChangePassword', params);
+    }
 
     userActivate(params: IApi.IUserActionParams = {} as IApi.IUserActionParams): Observable<IApi.IUserActionResponse | null> {
         return this.restService.post('/userAction', params);
@@ -60,7 +60,6 @@ export class UserApiService {
     userDeactivate2faInitiate(params: {}): any {
         return this.restService.post('/userDeactivate2faInitiate', params);
     }
-
 
     userChangePasswordForce(params: {}): any {
         return this.restService.post('/userChangePasswordForce', params);

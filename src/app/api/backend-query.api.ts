@@ -51,6 +51,7 @@ export class BackendQueryApiService {
     getPoolLuck(params: IGetPoolLuckParams): Observable<IGetPoolLuckResponse> {
         return this.restService.post('/backendPoolLuck', params);
     }
+    
     getUserStats(params: IGetUserStatsParams): Observable<IGetUserStatsResponse> {
         return this.restService.post('/backendQueryUserStats', params);
     }
@@ -71,13 +72,13 @@ export class BackendQueryApiService {
         return this.restService.post('/instanceEnumerateAll');
     }
 }
-/*
+
 export function GetUHistory(
     params: IGetUserStatsHistoryParams,
 ): Observable<IGetUserStatsHistoryResponse> {
     return this.restService.post("/backendQueryUserStatsHistory", params);
 }
-*/
+
 export interface IGetUserBalanceParams {
     coin?: TCoinName;
 }
