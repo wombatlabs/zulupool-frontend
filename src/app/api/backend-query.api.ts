@@ -73,11 +73,13 @@ export class BackendQueryApiService {
     }
 }
 
+/*
 export function GetUHistory(
     params: IGetUserStatsHistoryParams,
 ): Observable<IGetUserStatsHistoryResponse> {
     return this.restService.post("/backendQueryUserStatsHistory", params);
 }
+*/
 
 export interface IGetUserBalanceParams {
     coin?: TCoinName;

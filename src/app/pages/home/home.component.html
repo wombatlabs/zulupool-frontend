@@ -96,15 +96,6 @@ nzDescription="This is the Digibyte v8.22.0-RC2 testnet! For sha256 and scrypt t
 
 </div>
 
-<div class="card mt-4">
-    <h3>Pool Stats</h3>
-    <p><strong>Total Blocks Found:</strong> {{ stats.totalBlocksFound }}</p>
-    <p><strong>Time Since Last Block:</strong> {{ stats.timeSinceLastBlock | duration }}</p>
-    <p><strong>Expected Block Time:</strong> {{ stats.expectedBlockTime | number:'1.0-0' }} sec</p>
-    <p><strong>Total Work Done:</strong> {{ stats.totalWorkDone | number:'1.0-0' }}</p>
-    <p><strong>Total Paid Out:</strong> {{ stats.totalPaidOut | number:'1.4-4' }}</p>
-</div>
-
 <nz-table *ngIf="haveBlocksData" class="found-blocks-table" nzBordered
     [nzTemplateMode]="true" [nzLoading]="isLoadingBlocks">
     <thead>

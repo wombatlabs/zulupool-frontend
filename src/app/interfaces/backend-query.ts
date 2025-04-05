@@ -48,11 +48,6 @@ export interface IPoolStatsItem {
     powerUnit: EPowerUnit;
     lastShareTime: number;
     name?: string;
-    timeSinceLastBlock?: number;
-    totalBlocksFound?: number;
-    expectedBlockTime?: number;
-    totalPaidOut?: number;
-    totalWorkDone?: number;
 }
 export interface IPoolStatsData {
     clients: number;
